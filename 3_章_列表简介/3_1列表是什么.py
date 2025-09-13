@@ -28,3 +28,10 @@ python返回最后一个列表元素
 '''
 print(bicycles[-1]) # 访问最后一个元素
 
+## 😀：3.1.3 使用列表中的各个值
+'''
+你可以像使用其他变量一样使用列表中的各个值，例如可以使用f字符串根据列表中
+的值来创建信息
+'''
+message = f'My first bycycle was a {bicycles[0].title()}'
+print(message)
