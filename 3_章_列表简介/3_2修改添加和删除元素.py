@@ -35,3 +35,36 @@ print(motorcycles)
 '''
 如果知道要删除的元素在列表中的位置，可使用del语句
 '''
+del motorcycles[0]
+print(motorcycles)
+'''
+使用del可删除任意位置处的列表元素，条件时知道其索引
+'''
+## ❗: 使用方法pop()删除元素
+'''
+有时候，你要将元素从列表中删除，并接着使用它的值
+方法pop()删除列表末尾的元素，并让你能够接着使用它；
+术语pop()源自这样的类比：
+        列表就像一个栈，而删除列表末尾的元素相当于弹出栈顶元素
+'''
+motocycles_1 = ['h1','h2','h3']
+print(motocycles_1)
+
+popped_motocycle_1 = motocycles_1.pop()
+print(motorcycles)
+print(popped_motocycle_1) # pop()删除列表末尾的元素 此刻输出的是 h3
+
+# ❗： 03 弹出⏏列表中任何位置处的元素
+character = ['c1', 'c2', 'c3']
+print(character.pop(0)) # 此时输出c1
+print(character.pop())# 此时输出c3
+character.insert(0,'c1') # 在列表中插入元素
+character.insert(2,'c3')
+first_character = character.pop(0)
+print(f'The first character I written is {first_character.title()}!')
+
+# ❗： 04： 根据值删除元素
+'''
+有时候，你不知道要从列表中删除的值所处的位置。如果只知道要删除的元素的值
+，可以使用方法remove()
+'''
