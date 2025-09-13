@@ -68,3 +68,10 @@ print(f'The first character I written is {first_character.title()}!')
 有时候，你不知道要从列表中删除的值所处的位置。如果只知道要删除的元素的值
 ，可以使用方法remove()
 '''
+字母 = ['a', 'b', 'c', 'd','e']
+print(字母)
+字母.remove('c')
+print(字母)
+
+字母.insert(2,'c')
+print(字母)
