@@ -14,3 +14,29 @@ print(numbers)
 # 练习： 代码打印1~10的偶数
 偶数 = list(range(2,11,2))
 print(偶数) # [2, 4, 6, 8, 10]
+
+'''
+使用函数range()几乎可以创建任何需要的数集
+'''
+## 下面的代码演示了如何将前10个整数的平方加入一个列表中：
+## Squares.py 此刻 square是临时变量
+squares = []
+for value in range(1,11):
+    square = value ** 2
+    squares.append(square)
+print(squares) # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+print('----为了让代码更简洁，可以不使用临时变量square-----')
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+"""
+❗：
+    创建更复杂的列表时，可以使用上述的两种的方法任意一种；
+    有时候，使用临时变量会让代码更易读；
+    而在其他情况下，这样做会让代码无所谓的变长。
+    但是我们首先需要考虑的是：
+    编写清晰易懂且能完成所需功能的代码，等到审核代码时，再考虑
+    采用更加高效的方法。
+"""
