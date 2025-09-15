@@ -11,7 +11,24 @@ user_0 = {
     'first': 'enrico',
     'last': 'fermi'
 }
-for key, value in user_0.items():
+for key, value in user_0.items(): #1
     print(f"\nKey: {key}")
     print(f"Value: {value}")
+"""
+❗：
+    如#1所示，要编写遍历字典的for循环，可声明两个变量，用于存储键和值。
+    这两个变量可以使用任意名称
+    for语句的第二部分包含字典名和方法items()，它返回一个键值对列表。接下来
+    for循环依次将每个键值对赋给指定的两个变量。
+    在上述例子中，使用这两个变量打印每个键机器相关联的值
+"""
+print('----例子2-------------------')
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite language is {language.title()}.")
 
