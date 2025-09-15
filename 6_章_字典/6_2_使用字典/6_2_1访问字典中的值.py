@@ -13,3 +13,7 @@
 最简单的字典只有一个键值对：：
     ❗ alien_0 = {'color': 'green'}
 """
+# 😀 6.2.1 访问字典中的值
+alien_0 = {'color': 'green', 'points': 5}
+new_points = alien_0['points']
+print(f"You just earned {new_points} points! ")
