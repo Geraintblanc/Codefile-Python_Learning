@@ -13,5 +13,12 @@ favorite_languages = {
     'phil': 'python',
 }
 """
-
+定义好字典后，在最后一个键值对的下一行添加一个右花括号，并缩进四个空格，
+使其与字典中的键对其。
+一种不错的做法是，在最后一个键值对后面也加上都好，为以后在下一行添加键值对
+做好准备。
 """
+# 给定被调查者的名字，可以使用这个字典轻松获悉他喜欢的语言
+language = favorite_languages['sarah'].title()
+print(f"Sarah's favorite language is {language}")
+# favorite_languages['sarah']--为获悉Sarah喜欢的语言，我们应该用左侧的代码
